@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Grade {
+public class GradeSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
     System.out.print("Enter marks (0-100): ");
@@ -11,8 +11,10 @@ public class Grade {
             grade = 'B';
         else if (marks >= 60)
             grade = 'C';
-        else (marks >= 50)
+        else if (marks >= 50)
             grade = 'D';
+        else
+            grade = 'F';
         switch (grade) {
             case 'A':
                 System.out.println("Excellent Performance");
@@ -29,6 +31,6 @@ public class Grade {
             default:
                 System.out.println("Fail");
         }
-sc.close();
-}
+        sc.close();
+    }
 }
